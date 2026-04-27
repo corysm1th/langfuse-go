@@ -1,0 +1,3280 @@
+{
+  "mappings": [
+    {
+      "id": "bfdc306d-195d-4e8a-b7e1-62d8fac5e8ed",
+      "name": "listqueues - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"description\": \"description\",\n      \"scoreConfigIds\": [\n        \"scoreConfigIds\"\n      ],\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "bfdc306d-195d-4e8a-b7e1-62d8fac5e8ed",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "7ec15e25-4d2b-41a8-9cef-a923397a9aae",
+      "name": "createqueue - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"description\": \"description\",\n  \"scoreConfigIds\": [\n    \"scoreConfigIds\"\n  ],\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "7ec15e25-4d2b-41a8-9cef-a923397a9aae",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "813249e0-e8af-44d6-998b-abde70e34510",
+      "name": "getqueue - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"description\": \"description\",\n  \"scoreConfigIds\": [\n    \"scoreConfigIds\"\n  ],\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "813249e0-e8af-44d6-998b-abde70e34510",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "39230fdd-8c2d-45eb-bf42-767a702fbdf2",
+      "name": "listqueueitems - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/items",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"queueId\": \"queueId\",\n      \"objectId\": \"objectId\",\n      \"objectType\": \"TRACE\",\n      \"status\": \"PENDING\",\n      \"completedAt\": \"2024-01-15T09:30:00Z\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "39230fdd-8c2d-45eb-bf42-767a702fbdf2",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "32fe296e-5710-4339-ac74-912df471438d",
+      "name": "createqueueitem - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/items",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"queueId\": \"queueId\",\n  \"objectId\": \"objectId\",\n  \"objectType\": \"TRACE\",\n  \"status\": \"PENDING\",\n  \"completedAt\": \"2024-01-15T09:30:00Z\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "32fe296e-5710-4339-ac74-912df471438d",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "94bdfd30-2896-4828-b9f0-1af9c59856a1",
+      "name": "getqueueitem - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/items/{itemId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          },
+          "itemId": {
+            "equalTo": "itemId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"queueId\": \"queueId\",\n  \"objectId\": \"objectId\",\n  \"objectType\": \"TRACE\",\n  \"status\": \"PENDING\",\n  \"completedAt\": \"2024-01-15T09:30:00Z\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "94bdfd30-2896-4828-b9f0-1af9c59856a1",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "08f45fa0-0025-4fc7-8848-af90cce5a093",
+      "name": "deletequeueitem - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/items/{itemId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          },
+          "itemId": {
+            "equalTo": "itemId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"success\": true,\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "08f45fa0-0025-4fc7-8848-af90cce5a093",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "fc239886-d79e-4947-810b-616cf34211ec",
+      "name": "updatequeueitem - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/items/{itemId}",
+        "method": "PATCH",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          },
+          "itemId": {
+            "equalTo": "itemId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"queueId\": \"queueId\",\n  \"objectId\": \"objectId\",\n  \"objectType\": \"TRACE\",\n  \"status\": \"PENDING\",\n  \"completedAt\": \"2024-01-15T09:30:00Z\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "fc239886-d79e-4947-810b-616cf34211ec",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "7ffddac0-5859-44f2-91c7-8562502ea146",
+      "name": "createqueueassignment - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/assignments",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"userId\": \"userId\",\n  \"queueId\": \"queueId\",\n  \"projectId\": \"projectId\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "7ffddac0-5859-44f2-91c7-8562502ea146",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "2a6bebec-9233-46d9-8b6a-4bf579b79438",
+      "name": "deletequeueassignment - default",
+      "request": {
+        "urlPathTemplate": "/api/public/annotation-queues/{queueId}/assignments",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "queueId": {
+            "equalTo": "queueId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"success\": true\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "2a6bebec-9233-46d9-8b6a-4bf579b79438",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "711a0773-c064-411e-94b4-07faeb2a99c4",
+      "name": "getblobstorageintegrations - default",
+      "request": {
+        "urlPathTemplate": "/api/public/integrations/blob-storage",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"projectId\": \"projectId\",\n      \"type\": \"S3\",\n      \"bucketName\": \"bucketName\",\n      \"endpoint\": \"endpoint\",\n      \"region\": \"region\",\n      \"accessKeyId\": \"accessKeyId\",\n      \"prefix\": \"prefix\",\n      \"exportFrequency\": \"hourly\",\n      \"enabled\": true,\n      \"forcePathStyle\": true,\n      \"fileType\": \"JSON\",\n      \"exportMode\": \"FULL_HISTORY\",\n      \"exportStartDate\": \"2024-01-15T09:30:00Z\",\n      \"compressed\": true,\n      \"nextSyncAt\": \"2024-01-15T09:30:00Z\",\n      \"lastSyncAt\": \"2024-01-15T09:30:00Z\",\n      \"lastError\": \"lastError\",\n      \"lastErrorAt\": \"2024-01-15T09:30:00Z\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "711a0773-c064-411e-94b4-07faeb2a99c4",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "e37bde59-49e8-4caf-8f3c-7a6ded71893b",
+      "name": "upsertblobstorageintegration - default",
+      "request": {
+        "urlPathTemplate": "/api/public/integrations/blob-storage",
+        "method": "PUT",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"projectId\": \"projectId\",\n  \"type\": \"S3\",\n  \"bucketName\": \"bucketName\",\n  \"endpoint\": \"endpoint\",\n  \"region\": \"region\",\n  \"accessKeyId\": \"accessKeyId\",\n  \"prefix\": \"prefix\",\n  \"exportFrequency\": \"hourly\",\n  \"enabled\": true,\n  \"forcePathStyle\": true,\n  \"fileType\": \"JSON\",\n  \"exportMode\": \"FULL_HISTORY\",\n  \"exportStartDate\": \"2024-01-15T09:30:00Z\",\n  \"compressed\": true,\n  \"nextSyncAt\": \"2024-01-15T09:30:00Z\",\n  \"lastSyncAt\": \"2024-01-15T09:30:00Z\",\n  \"lastError\": \"lastError\",\n  \"lastErrorAt\": \"2024-01-15T09:30:00Z\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "e37bde59-49e8-4caf-8f3c-7a6ded71893b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "95ce1db6-7ee4-4bcf-9e92-12dd9fcabc1d",
+      "name": "getblobstorageintegrationstatus - default",
+      "request": {
+        "urlPathTemplate": "/api/public/integrations/blob-storage/{id}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"projectId\": \"projectId\",\n  \"syncStatus\": \"idle\",\n  \"enabled\": true,\n  \"lastSyncAt\": \"2024-01-15T09:30:00Z\",\n  \"nextSyncAt\": \"2024-01-15T09:30:00Z\",\n  \"lastError\": \"lastError\",\n  \"lastErrorAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "95ce1db6-7ee4-4bcf-9e92-12dd9fcabc1d",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "79393ce5-ddc1-4986-affa-1978dd706e47",
+      "name": "deleteblobstorageintegration - default",
+      "request": {
+        "urlPathTemplate": "/api/public/integrations/blob-storage/{id}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "79393ce5-ddc1-4986-affa-1978dd706e47",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "bce4aba3-1881-4826-aded-92cc6ee2732a",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/comments",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"projectId\": \"projectId\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\",\n      \"objectType\": \"TRACE\",\n      \"objectId\": \"objectId\",\n      \"content\": \"content\",\n      \"authorUserId\": \"authorUserId\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "bce4aba3-1881-4826-aded-92cc6ee2732a",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "b8424248-4e41-47d8-9f4d-94f84adfcf93",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/comments",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "b8424248-4e41-47d8-9f4d-94f84adfcf93",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "d8b641a8-9eb5-4c62-931e-6de2e0968047",
+      "name": "getById - default",
+      "request": {
+        "urlPathTemplate": "/api/public/comments/{commentId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "commentId": {
+            "equalTo": "commentId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"projectId\": \"projectId\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\",\n  \"objectType\": \"TRACE\",\n  \"objectId\": \"objectId\",\n  \"content\": \"content\",\n  \"authorUserId\": \"authorUserId\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d8b641a8-9eb5-4c62-931e-6de2e0968047",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "9c85a0ff-5ea2-4132-a148-22664a319216",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/dataset-items",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"status\": \"ACTIVE\",\n      \"input\": {\n        \"key\": \"value\"\n      },\n      \"expectedOutput\": {\n        \"key\": \"value\"\n      },\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"sourceTraceId\": \"sourceTraceId\",\n      \"sourceObservationId\": \"sourceObservationId\",\n      \"datasetId\": \"datasetId\",\n      \"datasetName\": \"datasetName\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "9c85a0ff-5ea2-4132-a148-22664a319216",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "4145d5d0-baa4-41ff-8400-a41110764d39",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/dataset-items",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"status\": \"ACTIVE\",\n  \"input\": {\n    \"key\": \"value\"\n  },\n  \"expectedOutput\": {\n    \"key\": \"value\"\n  },\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"sourceTraceId\": \"sourceTraceId\",\n  \"sourceObservationId\": \"sourceObservationId\",\n  \"datasetId\": \"datasetId\",\n  \"datasetName\": \"datasetName\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "4145d5d0-baa4-41ff-8400-a41110764d39",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "1041895e-dbe4-4599-b2ac-87053057879b",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/dataset-items/{id}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"status\": \"ACTIVE\",\n  \"input\": {\n    \"key\": \"value\"\n  },\n  \"expectedOutput\": {\n    \"key\": \"value\"\n  },\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"sourceTraceId\": \"sourceTraceId\",\n  \"sourceObservationId\": \"sourceObservationId\",\n  \"datasetId\": \"datasetId\",\n  \"datasetName\": \"datasetName\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "1041895e-dbe4-4599-b2ac-87053057879b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "9f9ea35e-e279-458b-af75-26868e9c955b",
+      "name": "delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/dataset-items/{id}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "9f9ea35e-e279-458b-af75-26868e9c955b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "bde309c9-76c7-44b2-a083-8150bf910cdc",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/dataset-run-items",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "queryParameters": {
+          "datasetId": {
+            "equalTo": "datasetId"
+          },
+          "runName": {
+            "equalTo": "runName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"datasetRunId\": \"datasetRunId\",\n      \"datasetRunName\": \"datasetRunName\",\n      \"datasetItemId\": \"datasetItemId\",\n      \"traceId\": \"traceId\",\n      \"observationId\": \"observationId\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "bde309c9-76c7-44b2-a083-8150bf910cdc",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "a1d317f8-2349-4382-aeca-b5c072ac2814",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/dataset-run-items",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"datasetRunId\": \"datasetRunId\",\n  \"datasetRunName\": \"datasetRunName\",\n  \"datasetItemId\": \"datasetItemId\",\n  \"traceId\": \"traceId\",\n  \"observationId\": \"observationId\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "a1d317f8-2349-4382-aeca-b5c072ac2814",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "d57fdf42-aa6b-40e9-96bd-e96caad64828",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/datasets",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"description\": \"description\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"inputSchema\": {\n        \"key\": \"value\"\n      },\n      \"expectedOutputSchema\": {\n        \"key\": \"value\"\n      },\n      \"projectId\": \"projectId\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d57fdf42-aa6b-40e9-96bd-e96caad64828",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "1959dadd-4c26-448d-bdff-ccf7bde95a0e",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/datasets",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"description\": \"description\",\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"inputSchema\": {\n    \"key\": \"value\"\n  },\n  \"expectedOutputSchema\": {\n    \"key\": \"value\"\n  },\n  \"projectId\": \"projectId\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "1959dadd-4c26-448d-bdff-ccf7bde95a0e",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "53c42769-7fd3-4cfe-81a8-5ac314ab6a75",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/datasets/{datasetName}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "datasetName": {
+            "equalTo": "datasetName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"description\": \"description\",\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"inputSchema\": {\n    \"key\": \"value\"\n  },\n  \"expectedOutputSchema\": {\n    \"key\": \"value\"\n  },\n  \"projectId\": \"projectId\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "53c42769-7fd3-4cfe-81a8-5ac314ab6a75",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "811cedd6-5407-48e7-9435-3671951634a1",
+      "name": "getrun - default",
+      "request": {
+        "urlPathTemplate": "/api/public/datasets/{datasetName}/runs/{runName}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "datasetName": {
+            "equalTo": "datasetName"
+          },
+          "runName": {
+            "equalTo": "runName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"description\": \"description\",\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"datasetId\": \"datasetId\",\n  \"datasetName\": \"datasetName\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\",\n  \"datasetRunItems\": [\n    {\n      \"id\": \"id\",\n      \"datasetRunId\": \"datasetRunId\",\n      \"datasetRunName\": \"datasetRunName\",\n      \"datasetItemId\": \"datasetItemId\",\n      \"traceId\": \"traceId\",\n      \"observationId\": \"observationId\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "811cedd6-5407-48e7-9435-3671951634a1",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "b5b8aed6-02da-44e6-87ca-935b46b3d85b",
+      "name": "deleterun - default",
+      "request": {
+        "urlPathTemplate": "/api/public/datasets/{datasetName}/runs/{runName}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "datasetName": {
+            "equalTo": "datasetName"
+          },
+          "runName": {
+            "equalTo": "runName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "b5b8aed6-02da-44e6-87ca-935b46b3d85b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "3363cfe6-7930-41bb-95bf-2747fbc8a818",
+      "name": "getruns - default",
+      "request": {
+        "urlPathTemplate": "/api/public/datasets/{datasetName}/runs",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "datasetName": {
+            "equalTo": "datasetName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"description\": \"description\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"datasetId\": \"datasetId\",\n      \"datasetName\": \"datasetName\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "3363cfe6-7930-41bb-95bf-2747fbc8a818",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "86ae5768-2e0b-4d1a-b245-0e855ae931df",
+      "name": "health - default",
+      "request": {
+        "urlPathTemplate": "/api/public/health",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"version\": \"1.25.0\",\n  \"status\": \"OK\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "86ae5768-2e0b-4d1a-b245-0e855ae931df",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "04343d5d-21d1-4275-a72e-f64d7a741d41",
+      "name": "batch - Example1",
+      "request": {
+        "urlPathTemplate": "/api/public/ingestion",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "\"\"",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "04343d5d-21d1-4275-a72e-f64d7a741d41",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "06b02bd6-46d4-4e0f-b448-c9c2b3370f66",
+      "name": "legacy_metricsV1_metrics - default",
+      "request": {
+        "urlPathTemplate": "/api/public/metrics",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "queryParameters": {
+          "query": {
+            "equalTo": "query"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"key\": \"value\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "06b02bd6-46d4-4e0f-b448-c9c2b3370f66",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "096e48b4-dbbd-4262-b71a-4cf8ce051613",
+      "name": "legacy_observationsV1_get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/observations/{observationId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "observationId": {
+            "equalTo": "observationId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"traceId\": \"traceId\",\n  \"type\": \"type\",\n  \"name\": \"name\",\n  \"startTime\": \"2024-01-15T09:30:00Z\",\n  \"endTime\": \"2024-01-15T09:30:00Z\",\n  \"completionStartTime\": \"2024-01-15T09:30:00Z\",\n  \"model\": \"model\",\n  \"modelParameters\": {\n    \"key\": \"value\"\n  },\n  \"input\": {\n    \"key\": \"value\"\n  },\n  \"version\": \"version\",\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"output\": {\n    \"key\": \"value\"\n  },\n  \"usage\": {\n    \"input\": 1,\n    \"output\": 1,\n    \"total\": 1,\n    \"unit\": \"unit\",\n    \"inputCost\": 1.1,\n    \"outputCost\": 1.1,\n    \"totalCost\": 1.1\n  },\n  \"level\": \"DEBUG\",\n  \"statusMessage\": \"statusMessage\",\n  \"parentObservationId\": \"parentObservationId\",\n  \"promptId\": \"promptId\",\n  \"usageDetails\": {\n    \"key\": 1\n  },\n  \"costDetails\": {\n    \"key\": 1.1\n  },\n  \"environment\": \"environment\",\n  \"promptName\": \"promptName\",\n  \"promptVersion\": 1,\n  \"modelId\": \"modelId\",\n  \"inputPrice\": 1.1,\n  \"outputPrice\": 1.1,\n  \"totalPrice\": 1.1,\n  \"calculatedInputCost\": 1.1,\n  \"calculatedOutputCost\": 1.1,\n  \"calculatedTotalCost\": 1.1,\n  \"latency\": 1.1,\n  \"timeToFirstToken\": 1.1\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "096e48b4-dbbd-4262-b71a-4cf8ce051613",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "ec453eb9-a072-4f42-aa0b-4a0709ecf3b7",
+      "name": "legacy_observationsV1_getMany - default",
+      "request": {
+        "urlPathTemplate": "/api/public/observations",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"traceId\": \"traceId\",\n      \"type\": \"type\",\n      \"name\": \"name\",\n      \"startTime\": \"2024-01-15T09:30:00Z\",\n      \"endTime\": \"2024-01-15T09:30:00Z\",\n      \"completionStartTime\": \"2024-01-15T09:30:00Z\",\n      \"model\": \"model\",\n      \"modelParameters\": {\n        \"key\": \"value\"\n      },\n      \"input\": {\n        \"key\": \"value\"\n      },\n      \"version\": \"version\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"output\": {\n        \"key\": \"value\"\n      },\n      \"usage\": {\n        \"input\": 1,\n        \"output\": 1,\n        \"total\": 1\n      },\n      \"level\": \"DEBUG\",\n      \"statusMessage\": \"statusMessage\",\n      \"parentObservationId\": \"parentObservationId\",\n      \"promptId\": \"promptId\",\n      \"usageDetails\": {\n        \"key\": 1\n      },\n      \"costDetails\": {\n        \"key\": 1.1\n      },\n      \"environment\": \"environment\",\n      \"promptName\": \"promptName\",\n      \"promptVersion\": 1,\n      \"modelId\": \"modelId\",\n      \"inputPrice\": 1.1,\n      \"outputPrice\": 1.1,\n      \"totalPrice\": 1.1,\n      \"calculatedInputCost\": 1.1,\n      \"calculatedOutputCost\": 1.1,\n      \"calculatedTotalCost\": 1.1,\n      \"latency\": 1.1,\n      \"timeToFirstToken\": 1.1\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "ec453eb9-a072-4f42-aa0b-4a0709ecf3b7",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "3d249f54-751a-478b-83b6-c766e860bdc0",
+      "name": "legacy_scoreV1_create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scores",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "3d249f54-751a-478b-83b6-c766e860bdc0",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "e9b25bcb-176b-4b54-9f0a-d588a2ee0b5a",
+      "name": "legacy_scoreV1_delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scores/{scoreId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "scoreId": {
+            "equalTo": "scoreId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "\"\"",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "e9b25bcb-176b-4b54-9f0a-d588a2ee0b5a",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "034291b1-5844-476d-85f1-6ac5c90939cf",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/llm-connections",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"provider\": \"provider\",\n      \"adapter\": \"adapter\",\n      \"displaySecretKey\": \"displaySecretKey\",\n      \"baseURL\": \"baseURL\",\n      \"customModels\": [\n        \"customModels\"\n      ],\n      \"withDefaultModels\": true,\n      \"extraHeaderKeys\": [\n        \"extraHeaderKeys\"\n      ],\n      \"config\": {\n        \"key\": \"value\"\n      },\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "034291b1-5844-476d-85f1-6ac5c90939cf",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "2d6591ce-abb5-4ded-a76c-d04337733f01",
+      "name": "upsert - default",
+      "request": {
+        "urlPathTemplate": "/api/public/llm-connections",
+        "method": "PUT",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"provider\": \"provider\",\n  \"adapter\": \"adapter\",\n  \"displaySecretKey\": \"displaySecretKey\",\n  \"baseURL\": \"baseURL\",\n  \"customModels\": [\n    \"customModels\"\n  ],\n  \"withDefaultModels\": true,\n  \"extraHeaderKeys\": [\n    \"extraHeaderKeys\"\n  ],\n  \"config\": {\n    \"key\": \"value\"\n  },\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "2d6591ce-abb5-4ded-a76c-d04337733f01",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "d764608d-9fcf-4417-a54f-c0226f969a4e",
+      "name": "delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/llm-connections/{id}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d764608d-9fcf-4417-a54f-c0226f969a4e",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "94857bb1-de34-4ea7-b223-a9b8558eb326",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/media/{mediaId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "mediaId": {
+            "equalTo": "mediaId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"mediaId\": \"mediaId\",\n  \"contentType\": \"contentType\",\n  \"contentLength\": 1,\n  \"uploadedAt\": \"2024-01-15T09:30:00Z\",\n  \"url\": \"url\",\n  \"urlExpiry\": \"urlExpiry\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "94857bb1-de34-4ea7-b223-a9b8558eb326",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "1a25a474-ce76-4cd0-8a67-be6aee27bf84",
+      "name": "patch - default",
+      "request": {
+        "urlPathTemplate": "/api/public/media/{mediaId}",
+        "method": "PATCH",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "mediaId": {
+            "equalTo": "mediaId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "\"\"",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "1a25a474-ce76-4cd0-8a67-be6aee27bf84",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "8efde7ab-cc4a-44bb-bac2-d23cf9480f68",
+      "name": "getuploadurl - default",
+      "request": {
+        "urlPathTemplate": "/api/public/media",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"uploadUrl\": \"uploadUrl\",\n  \"mediaId\": \"mediaId\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "8efde7ab-cc4a-44bb-bac2-d23cf9480f68",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "f8a9400a-f8e9-495b-bc76-8e7005a91c64",
+      "name": "metrics - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/metrics",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "queryParameters": {
+          "query": {
+            "equalTo": "query"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"key\": \"value\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "f8a9400a-f8e9-495b-bc76-8e7005a91c64",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "308f3ed9-f704-466c-a161-d6f977be652f",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/models",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"modelName\": \"modelName\",\n      \"matchPattern\": \"matchPattern\",\n      \"startDate\": \"2024-01-15T09:30:00Z\",\n      \"unit\": \"CHARACTERS\",\n      \"inputPrice\": 1.1,\n      \"outputPrice\": 1.1,\n      \"totalPrice\": 1.1,\n      \"tokenizerId\": \"tokenizerId\",\n      \"tokenizerConfig\": {\n        \"key\": \"value\"\n      },\n      \"isLangfuseManaged\": true,\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"prices\": {\n        \"key\": {\n          \"price\": 1.1\n        }\n      },\n      \"pricingTiers\": [\n        {\n          \"id\": \"id\",\n          \"name\": \"name\",\n          \"isDefault\": true,\n          \"priority\": 1,\n          \"conditions\": [\n            {\n              \"usageDetailPattern\": \"usageDetailPattern\",\n              \"operator\": \"gt\",\n              \"value\": 1.1,\n              \"caseSensitive\": true\n            }\n          ],\n          \"prices\": {\n            \"key\": 1.1\n          }\n        }\n      ]\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "308f3ed9-f704-466c-a161-d6f977be652f",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "cde5a828-dc5a-4128-92cd-8251b124bf22",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/models",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"modelName\": \"modelName\",\n  \"matchPattern\": \"matchPattern\",\n  \"startDate\": \"2024-01-15T09:30:00Z\",\n  \"unit\": \"CHARACTERS\",\n  \"inputPrice\": 1.1,\n  \"outputPrice\": 1.1,\n  \"totalPrice\": 1.1,\n  \"tokenizerId\": \"tokenizerId\",\n  \"tokenizerConfig\": {\n    \"key\": \"value\"\n  },\n  \"isLangfuseManaged\": true,\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"prices\": {\n    \"key\": {\n      \"price\": 1.1\n    }\n  },\n  \"pricingTiers\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"isDefault\": true,\n      \"priority\": 1,\n      \"conditions\": [\n        {\n          \"usageDetailPattern\": \"usageDetailPattern\",\n          \"operator\": \"gt\",\n          \"value\": 1.1,\n          \"caseSensitive\": true\n        }\n      ],\n      \"prices\": {\n        \"key\": 1.1\n      }\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "cde5a828-dc5a-4128-92cd-8251b124bf22",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "5a8ea7ba-921b-4c46-9bf3-b80ec7fec695",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/models/{id}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"modelName\": \"modelName\",\n  \"matchPattern\": \"matchPattern\",\n  \"startDate\": \"2024-01-15T09:30:00Z\",\n  \"unit\": \"CHARACTERS\",\n  \"inputPrice\": 1.1,\n  \"outputPrice\": 1.1,\n  \"totalPrice\": 1.1,\n  \"tokenizerId\": \"tokenizerId\",\n  \"tokenizerConfig\": {\n    \"key\": \"value\"\n  },\n  \"isLangfuseManaged\": true,\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"prices\": {\n    \"key\": {\n      \"price\": 1.1\n    }\n  },\n  \"pricingTiers\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"isDefault\": true,\n      \"priority\": 1,\n      \"conditions\": [\n        {\n          \"usageDetailPattern\": \"usageDetailPattern\",\n          \"operator\": \"gt\",\n          \"value\": 1.1,\n          \"caseSensitive\": true\n        }\n      ],\n      \"prices\": {\n        \"key\": 1.1\n      }\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "5a8ea7ba-921b-4c46-9bf3-b80ec7fec695",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "74cb415e-745b-4731-bec9-e685fd73cb9b",
+      "name": "delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/models/{id}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "id": {
+            "equalTo": "id"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "\"\"",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "74cb415e-745b-4731-bec9-e685fd73cb9b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "859ef4b4-a8c5-4707-b28b-e6b926bf8643",
+      "name": "getmany - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/observations",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"traceId\": \"traceId\",\n      \"startTime\": \"2024-01-15T09:30:00Z\",\n      \"endTime\": \"2024-01-15T09:30:00Z\",\n      \"projectId\": \"projectId\",\n      \"parentObservationId\": \"parentObservationId\",\n      \"type\": \"type\",\n      \"name\": \"name\",\n      \"level\": \"DEBUG\",\n      \"statusMessage\": \"statusMessage\",\n      \"version\": \"version\",\n      \"environment\": \"environment\",\n      \"bookmarked\": true,\n      \"public\": true,\n      \"userId\": \"userId\",\n      \"sessionId\": \"sessionId\",\n      \"completionStartTime\": \"2024-01-15T09:30:00Z\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\",\n      \"input\": {\n        \"key\": \"value\"\n      },\n      \"output\": {\n        \"key\": \"value\"\n      },\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"providedModelName\": \"providedModelName\",\n      \"internalModelId\": \"internalModelId\",\n      \"modelParameters\": {\n        \"key\": \"value\"\n      },\n      \"totalCost\": 1.1,\n      \"promptId\": \"promptId\",\n      \"promptName\": \"promptName\",\n      \"promptVersion\": 1,\n      \"latency\": 1.1,\n      \"timeToFirstToken\": 1.1,\n      \"modelId\": \"modelId\"\n    }\n  ],\n  \"meta\": {\n    \"cursor\": \"cursor\"\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "859ef4b4-a8c5-4707-b28b-e6b926bf8643",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "f0840531-0a30-432f-ad21-fb36c1631bf0",
+      "name": "exporttraces - BasicTraceExport",
+      "request": {
+        "urlPathTemplate": "/api/public/otel/v1/traces",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "f0840531-0a30-432f-ad21-fb36c1631bf0",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "64a78620-9d34-4be4-879e-54aab8a37473",
+      "name": "getorganizationmemberships - default",
+      "request": {
+        "urlPathTemplate": "/api/public/organizations/memberships",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"memberships\": [\n    {\n      \"userId\": \"userId\",\n      \"role\": \"OWNER\",\n      \"email\": \"email\",\n      \"name\": \"name\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "64a78620-9d34-4be4-879e-54aab8a37473",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "3d28232e-ad2f-49ce-959b-5311deef9cf8",
+      "name": "updateorganizationmembership - default",
+      "request": {
+        "urlPathTemplate": "/api/public/organizations/memberships",
+        "method": "PUT",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"userId\": \"userId\",\n  \"role\": \"OWNER\",\n  \"email\": \"email\",\n  \"name\": \"name\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "3d28232e-ad2f-49ce-959b-5311deef9cf8",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "041afd5f-e08c-4877-b49a-a4eb8aa91d0b",
+      "name": "deleteorganizationmembership - default",
+      "request": {
+        "urlPathTemplate": "/api/public/organizations/memberships",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\",\n  \"userId\": \"userId\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "041afd5f-e08c-4877-b49a-a4eb8aa91d0b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "e5d8799f-faa2-46d5-9286-da426b0ddcd8",
+      "name": "getprojectmemberships - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}/memberships",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"memberships\": [\n    {\n      \"userId\": \"userId\",\n      \"role\": \"OWNER\",\n      \"email\": \"email\",\n      \"name\": \"name\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "e5d8799f-faa2-46d5-9286-da426b0ddcd8",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "78e37a6e-e2ef-4ea6-ab2a-7f221830c237",
+      "name": "updateprojectmembership - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}/memberships",
+        "method": "PUT",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"userId\": \"userId\",\n  \"role\": \"OWNER\",\n  \"email\": \"email\",\n  \"name\": \"name\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "78e37a6e-e2ef-4ea6-ab2a-7f221830c237",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "a6ed1a6a-1525-490b-8f87-f1927c555eca",
+      "name": "deleteprojectmembership - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}/memberships",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\",\n  \"userId\": \"userId\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "a6ed1a6a-1525-490b-8f87-f1927c555eca",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "ba961706-c9d2-4917-a77e-c0df9d38f45b",
+      "name": "getorganizationprojects - default",
+      "request": {
+        "urlPathTemplate": "/api/public/organizations/projects",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"projects\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "ba961706-c9d2-4917-a77e-c0df9d38f45b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "d4f6cf2f-25c3-4e9e-9ab6-cc94d561d650",
+      "name": "getorganizationapikeys - default",
+      "request": {
+        "urlPathTemplate": "/api/public/organizations/apiKeys",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"apiKeys\": [\n    {\n      \"id\": \"id\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"expiresAt\": \"2024-01-15T09:30:00Z\",\n      \"lastUsedAt\": \"2024-01-15T09:30:00Z\",\n      \"note\": \"note\",\n      \"publicKey\": \"publicKey\",\n      \"displaySecretKey\": \"displaySecretKey\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d4f6cf2f-25c3-4e9e-9ab6-cc94d561d650",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "a36889cf-e2d0-4daf-83d7-6e3fa1e41483",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"organization\": {\n        \"id\": \"id\",\n        \"name\": \"name\"\n      },\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"retentionDays\": 1\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "a36889cf-e2d0-4daf-83d7-6e3fa1e41483",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "d28c9a48-30e4-40c8-bfc7-a615dd28ce47",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"organization\": {\n    \"id\": \"id\",\n    \"name\": \"name\"\n  },\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"retentionDays\": 1\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d28c9a48-30e4-40c8-bfc7-a615dd28ce47",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "2b6ec649-1a79-4832-b9a2-bb21f7cf0de3",
+      "name": "update - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}",
+        "method": "PUT",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"organization\": {\n    \"id\": \"id\",\n    \"name\": \"name\"\n  },\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"retentionDays\": 1\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "2b6ec649-1a79-4832-b9a2-bb21f7cf0de3",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "73db35e1-712d-4761-bff2-458d16263c68",
+      "name": "delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 202,
+        "body": "{\n  \"success\": true,\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "73db35e1-712d-4761-bff2-458d16263c68",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "13f97453-d727-4aaa-8ac8-c1db5e167b1e",
+      "name": "getapikeys - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}/apiKeys",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"apiKeys\": [\n    {\n      \"id\": \"id\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"expiresAt\": \"2024-01-15T09:30:00Z\",\n      \"lastUsedAt\": \"2024-01-15T09:30:00Z\",\n      \"note\": \"note\",\n      \"publicKey\": \"publicKey\",\n      \"displaySecretKey\": \"displaySecretKey\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "13f97453-d727-4aaa-8ac8-c1db5e167b1e",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "464518f4-bc15-40f8-ba68-a9de64ae9df7",
+      "name": "createapikey - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}/apiKeys",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"publicKey\": \"publicKey\",\n  \"secretKey\": \"secretKey\",\n  \"displaySecretKey\": \"displaySecretKey\",\n  \"note\": \"note\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "464518f4-bc15-40f8-ba68-a9de64ae9df7",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "b9f78f36-eb37-42e9-aa96-2bd13c232d5f",
+      "name": "deleteapikey - default",
+      "request": {
+        "urlPathTemplate": "/api/public/projects/{projectId}/apiKeys/{apiKeyId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "projectId": {
+            "equalTo": "projectId"
+          },
+          "apiKeyId": {
+            "equalTo": "apiKeyId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"success\": true\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "b9f78f36-eb37-42e9-aa96-2bd13c232d5f",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "a75ecb72-1d34-4235-af3f-cff66a575136",
+      "name": "update - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/prompts/{name}/versions/{version}",
+        "method": "PATCH",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "name": {
+            "equalTo": "name"
+          },
+          "version": {
+            "equalTo": "1"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"name\": \"name\",\n  \"version\": 1,\n  \"config\": {\n    \"key\": \"value\"\n  },\n  \"labels\": [\n    \"labels\"\n  ],\n  \"tags\": [\n    \"tags\"\n  ],\n  \"commitMessage\": \"commitMessage\",\n  \"resolutionGraph\": {\n    \"key\": \"value\"\n  },\n  \"prompt\": [\n    {\n      \"role\": \"role\",\n      \"content\": \"content\",\n      \"type\": \"chatmessage\"\n    }\n  ],\n  \"type\": \"chat\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "a75ecb72-1d34-4235-af3f-cff66a575136",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "7c4b1899-c362-4a64-a166-120ebffdf258",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/prompts/{promptName}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "promptName": {
+            "equalTo": "promptName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"name\": \"name\",\n  \"version\": 1,\n  \"config\": {\n    \"key\": \"value\"\n  },\n  \"labels\": [\n    \"labels\"\n  ],\n  \"tags\": [\n    \"tags\"\n  ],\n  \"commitMessage\": \"commitMessage\",\n  \"resolutionGraph\": {\n    \"key\": \"value\"\n  },\n  \"prompt\": [\n    {\n      \"role\": \"role\",\n      \"content\": \"content\",\n      \"type\": \"chatmessage\"\n    }\n  ],\n  \"type\": \"chat\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "7c4b1899-c362-4a64-a166-120ebffdf258",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "caea4b54-9113-44f9-afd3-db3740614718",
+      "name": "delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/prompts/{promptName}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "promptName": {
+            "equalTo": "promptName"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "\"\"",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "caea4b54-9113-44f9-afd3-db3740614718",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "16f437aa-6154-4052-9b6c-6c4bb844ca28",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/prompts",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"name\": \"name\",\n      \"type\": \"chat\",\n      \"versions\": [\n        1\n      ],\n      \"labels\": [\n        \"labels\"\n      ],\n      \"tags\": [\n        \"tags\"\n      ],\n      \"lastUpdatedAt\": \"2024-01-15T09:30:00Z\",\n      \"lastConfig\": {\n        \"key\": \"value\"\n      }\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "16f437aa-6154-4052-9b6c-6c4bb844ca28",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "a5fca5f0-8e66-42e3-91e7-b8194900b273",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/prompts",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"name\": \"name\",\n  \"version\": 1,\n  \"config\": {\n    \"key\": \"value\"\n  },\n  \"labels\": [\n    \"labels\"\n  ],\n  \"tags\": [\n    \"tags\"\n  ],\n  \"commitMessage\": \"commitMessage\",\n  \"resolutionGraph\": {\n    \"key\": \"value\"\n  },\n  \"prompt\": [\n    {\n      \"role\": \"role\",\n      \"content\": \"content\",\n      \"type\": \"chatmessage\"\n    }\n  ],\n  \"type\": \"chat\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "a5fca5f0-8e66-42e3-91e7-b8194900b273",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "c167281f-fddd-4614-9cd1-faeec396eec9",
+      "name": "getserviceproviderconfig - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/ServiceProviderConfig",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"schemas\": [\n    \"schemas\"\n  ],\n  \"documentationUri\": \"documentationUri\",\n  \"patch\": {\n    \"supported\": true\n  },\n  \"bulk\": {\n    \"supported\": true,\n    \"maxOperations\": 1,\n    \"maxPayloadSize\": 1\n  },\n  \"filter\": {\n    \"supported\": true,\n    \"maxResults\": 1\n  },\n  \"changePassword\": {\n    \"supported\": true\n  },\n  \"sort\": {\n    \"supported\": true\n  },\n  \"etag\": {\n    \"supported\": true\n  },\n  \"authenticationSchemes\": [\n    {\n      \"name\": \"name\",\n      \"description\": \"description\",\n      \"specUri\": \"specUri\",\n      \"type\": \"type\",\n      \"primary\": true\n    }\n  ],\n  \"meta\": {\n    \"resourceType\": \"resourceType\",\n    \"location\": \"location\"\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "c167281f-fddd-4614-9cd1-faeec396eec9",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "f9ad20e2-886e-46e4-a6a1-57e10682fa92",
+      "name": "getresourcetypes - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/ResourceTypes",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"schemas\": [\n    \"schemas\"\n  ],\n  \"totalResults\": 1,\n  \"Resources\": [\n    {\n      \"schemas\": [\n        \"schemas\"\n      ],\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"endpoint\": \"endpoint\",\n      \"description\": \"description\",\n      \"schema\": \"schema\",\n      \"schemaExtensions\": [\n        {\n          \"schema\": \"schema\",\n          \"required\": true\n        }\n      ],\n      \"meta\": {\n        \"resourceType\": \"resourceType\",\n        \"location\": \"location\"\n      }\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "f9ad20e2-886e-46e4-a6a1-57e10682fa92",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "f79f7571-ad3b-4ee2-a8d4-556fbe44d3c6",
+      "name": "getschemas - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/Schemas",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"schemas\": [\n    \"schemas\"\n  ],\n  \"totalResults\": 1,\n  \"Resources\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"description\": \"description\",\n      \"attributes\": [],\n      \"meta\": {\n        \"resourceType\": \"resourceType\",\n        \"location\": \"location\"\n      }\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "f79f7571-ad3b-4ee2-a8d4-556fbe44d3c6",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "57c2cefe-2485-4401-8537-1c73728168b0",
+      "name": "listusers - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/Users",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"schemas\": [\n    \"schemas\"\n  ],\n  \"totalResults\": 1,\n  \"startIndex\": 1,\n  \"itemsPerPage\": 1,\n  \"Resources\": [\n    {\n      \"schemas\": [\n        \"schemas\"\n      ],\n      \"id\": \"id\",\n      \"userName\": \"userName\",\n      \"name\": {},\n      \"emails\": [\n        {\n          \"primary\": true,\n          \"value\": \"value\",\n          \"type\": \"type\"\n        }\n      ],\n      \"meta\": {\n        \"resourceType\": \"resourceType\"\n      }\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "57c2cefe-2485-4401-8537-1c73728168b0",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "57ece3d3-0be1-462e-8476-c0c16c3a28a3",
+      "name": "createuser - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/Users",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"schemas\": [\n    \"schemas\"\n  ],\n  \"id\": \"id\",\n  \"userName\": \"userName\",\n  \"name\": {\n    \"formatted\": \"formatted\"\n  },\n  \"emails\": [\n    {\n      \"primary\": true,\n      \"value\": \"value\",\n      \"type\": \"type\"\n    }\n  ],\n  \"meta\": {\n    \"resourceType\": \"resourceType\",\n    \"created\": \"created\",\n    \"lastModified\": \"lastModified\"\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "57ece3d3-0be1-462e-8476-c0c16c3a28a3",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "00d8d109-169b-4fd1-a1af-488a6d94d554",
+      "name": "getuser - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/Users/{userId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "userId": {
+            "equalTo": "userId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"schemas\": [\n    \"schemas\"\n  ],\n  \"id\": \"id\",\n  \"userName\": \"userName\",\n  \"name\": {\n    \"formatted\": \"formatted\"\n  },\n  \"emails\": [\n    {\n      \"primary\": true,\n      \"value\": \"value\",\n      \"type\": \"type\"\n    }\n  ],\n  \"meta\": {\n    \"resourceType\": \"resourceType\",\n    \"created\": \"created\",\n    \"lastModified\": \"lastModified\"\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "00d8d109-169b-4fd1-a1af-488a6d94d554",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "9259e330-3ca4-45c0-a15b-6ab202d0ec4e",
+      "name": "deleteuser - default",
+      "request": {
+        "urlPathTemplate": "/api/public/scim/Users/{userId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "userId": {
+            "equalTo": "userId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "9259e330-3ca4-45c0-a15b-6ab202d0ec4e",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "d2aac4ab-0ce1-4676-b921-aa55dfe3876b",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/score-configs",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"name\": \"name\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\",\n      \"projectId\": \"projectId\",\n      \"dataType\": \"NUMERIC\",\n      \"isArchived\": true,\n      \"minValue\": 1.1,\n      \"maxValue\": 1.1,\n      \"categories\": [\n        {\n          \"value\": 1.1,\n          \"label\": \"label\"\n        }\n      ],\n      \"description\": \"description\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d2aac4ab-0ce1-4676-b921-aa55dfe3876b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "d7fde9eb-37bc-445e-a7ca-e7af226a4dff",
+      "name": "create - default",
+      "request": {
+        "urlPathTemplate": "/api/public/score-configs",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\",\n  \"projectId\": \"projectId\",\n  \"dataType\": \"NUMERIC\",\n  \"isArchived\": true,\n  \"minValue\": 1.1,\n  \"maxValue\": 1.1,\n  \"categories\": [\n    {\n      \"value\": 1.1,\n      \"label\": \"label\"\n    }\n  ],\n  \"description\": \"description\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d7fde9eb-37bc-445e-a7ca-e7af226a4dff",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "ecb51e7a-56f1-43b9-860b-559e25a15db0",
+      "name": "getById - default",
+      "request": {
+        "urlPathTemplate": "/api/public/score-configs/{configId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "configId": {
+            "equalTo": "configId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\",\n  \"projectId\": \"projectId\",\n  \"dataType\": \"NUMERIC\",\n  \"isArchived\": true,\n  \"minValue\": 1.1,\n  \"maxValue\": 1.1,\n  \"categories\": [\n    {\n      \"value\": 1.1,\n      \"label\": \"label\"\n    }\n  ],\n  \"description\": \"description\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "ecb51e7a-56f1-43b9-860b-559e25a15db0",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "fa94bafe-626b-4119-8c2b-108c797c03e1",
+      "name": "update - default",
+      "request": {
+        "urlPathTemplate": "/api/public/score-configs/{configId}",
+        "method": "PATCH",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "configId": {
+            "equalTo": "configId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"name\": \"name\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\",\n  \"projectId\": \"projectId\",\n  \"dataType\": \"NUMERIC\",\n  \"isArchived\": true,\n  \"minValue\": 1.1,\n  \"maxValue\": 1.1,\n  \"categories\": [\n    {\n      \"value\": 1.1,\n      \"label\": \"label\"\n    }\n  ],\n  \"description\": \"description\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "fa94bafe-626b-4119-8c2b-108c797c03e1",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "fe426b83-da54-49bc-a6d4-6faa57e286ae",
+      "name": "getMany - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/scores",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"traceId\": \"traceId\",\n      \"sessionId\": \"sessionId\",\n      \"observationId\": \"observationId\",\n      \"datasetRunId\": \"datasetRunId\",\n      \"name\": \"name\",\n      \"source\": \"ANNOTATION\",\n      \"timestamp\": \"2024-01-15T09:30:00Z\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\",\n      \"authorUserId\": \"authorUserId\",\n      \"comment\": \"comment\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"configId\": \"configId\",\n      \"queueId\": \"queueId\",\n      \"environment\": \"environment\",\n      \"value\": 1.1,\n      \"dataType\": \"NUMERIC\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "fe426b83-da54-49bc-a6d4-6faa57e286ae",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "ab292522-8205-4d17-9880-2fa4f380e01c",
+      "name": "getById - default",
+      "request": {
+        "urlPathTemplate": "/api/public/v2/scores/{scoreId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "scoreId": {
+            "equalTo": "scoreId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"traceId\": \"traceId\",\n  \"sessionId\": \"sessionId\",\n  \"observationId\": \"observationId\",\n  \"datasetRunId\": \"datasetRunId\",\n  \"name\": \"name\",\n  \"source\": \"ANNOTATION\",\n  \"timestamp\": \"2024-01-15T09:30:00Z\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"updatedAt\": \"2024-01-15T09:30:00Z\",\n  \"authorUserId\": \"authorUserId\",\n  \"comment\": \"comment\",\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"configId\": \"configId\",\n  \"queueId\": \"queueId\",\n  \"environment\": \"environment\",\n  \"value\": 1.1,\n  \"dataType\": \"NUMERIC\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "ab292522-8205-4d17-9880-2fa4f380e01c",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "f7a4e963-bf6d-4ac4-90dd-a9985769d8ef",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/sessions",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"projectId\": \"projectId\",\n      \"environment\": \"environment\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "f7a4e963-bf6d-4ac4-90dd-a9985769d8ef",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "88520169-02ce-49db-bb87-36470bd54472",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/sessions/{sessionId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "sessionId": {
+            "equalTo": "sessionId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"createdAt\": \"2024-01-15T09:30:00Z\",\n  \"projectId\": \"projectId\",\n  \"environment\": \"environment\",\n  \"traces\": [\n    {\n      \"id\": \"id\",\n      \"timestamp\": \"2024-01-15T09:30:00Z\",\n      \"name\": \"name\",\n      \"input\": {\n        \"key\": \"value\"\n      },\n      \"output\": {\n        \"key\": \"value\"\n      },\n      \"sessionId\": \"sessionId\",\n      \"release\": \"release\",\n      \"version\": \"version\",\n      \"userId\": \"userId\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"tags\": [\n        \"tags\"\n      ],\n      \"public\": true,\n      \"environment\": \"environment\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "88520169-02ce-49db-bb87-36470bd54472",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "f06eee26-125e-438b-bbe1-3130856899d9",
+      "name": "get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/traces/{traceId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "traceId": {
+            "equalTo": "traceId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"id\",\n  \"timestamp\": \"2024-01-15T09:30:00Z\",\n  \"name\": \"name\",\n  \"input\": {\n    \"key\": \"value\"\n  },\n  \"output\": {\n    \"key\": \"value\"\n  },\n  \"sessionId\": \"sessionId\",\n  \"release\": \"release\",\n  \"version\": \"version\",\n  \"userId\": \"userId\",\n  \"metadata\": {\n    \"key\": \"value\"\n  },\n  \"tags\": [\n    \"tags\"\n  ],\n  \"public\": true,\n  \"environment\": \"environment\",\n  \"htmlPath\": \"htmlPath\",\n  \"latency\": 1.1,\n  \"totalCost\": 1.1,\n  \"observations\": [\n    {\n      \"id\": \"id\",\n      \"traceId\": \"traceId\",\n      \"type\": \"type\",\n      \"name\": \"name\",\n      \"startTime\": \"2024-01-15T09:30:00Z\",\n      \"endTime\": \"2024-01-15T09:30:00Z\",\n      \"completionStartTime\": \"2024-01-15T09:30:00Z\",\n      \"model\": \"model\",\n      \"modelParameters\": {\n        \"key\": \"value\"\n      },\n      \"input\": {\n        \"key\": \"value\"\n      },\n      \"version\": \"version\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"output\": {\n        \"key\": \"value\"\n      },\n      \"usage\": {\n        \"input\": 1,\n        \"output\": 1,\n        \"total\": 1\n      },\n      \"level\": \"DEBUG\",\n      \"statusMessage\": \"statusMessage\",\n      \"parentObservationId\": \"parentObservationId\",\n      \"promptId\": \"promptId\",\n      \"usageDetails\": {\n        \"key\": 1\n      },\n      \"costDetails\": {\n        \"key\": 1.1\n      },\n      \"environment\": \"environment\",\n      \"promptName\": \"promptName\",\n      \"promptVersion\": 1,\n      \"modelId\": \"modelId\",\n      \"inputPrice\": 1.1,\n      \"outputPrice\": 1.1,\n      \"totalPrice\": 1.1,\n      \"calculatedInputCost\": 1.1,\n      \"calculatedOutputCost\": 1.1,\n      \"calculatedTotalCost\": 1.1,\n      \"latency\": 1.1,\n      \"timeToFirstToken\": 1.1\n    }\n  ],\n  \"scores\": [\n    {\n      \"id\": \"id\",\n      \"traceId\": \"traceId\",\n      \"name\": \"name\",\n      \"source\": \"ANNOTATION\",\n      \"observationId\": \"observationId\",\n      \"timestamp\": \"2024-01-15T09:30:00Z\",\n      \"createdAt\": \"2024-01-15T09:30:00Z\",\n      \"updatedAt\": \"2024-01-15T09:30:00Z\",\n      \"authorUserId\": \"authorUserId\",\n      \"comment\": \"comment\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"configId\": \"configId\",\n      \"queueId\": \"queueId\",\n      \"environment\": \"environment\",\n      \"value\": 1.1,\n      \"dataType\": \"NUMERIC\"\n    }\n  ]\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "f06eee26-125e-438b-bbe1-3130856899d9",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "dcb427c1-472f-42be-ba51-a8b8c1e1aa10",
+      "name": "delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/traces/{traceId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "traceId": {
+            "equalTo": "traceId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "dcb427c1-472f-42be-ba51-a8b8c1e1aa10",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "2f38a669-471e-4a39-a726-27c370fbd286",
+      "name": "list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/traces",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"id\",\n      \"timestamp\": \"2024-01-15T09:30:00Z\",\n      \"name\": \"name\",\n      \"input\": {\n        \"key\": \"value\"\n      },\n      \"output\": {\n        \"key\": \"value\"\n      },\n      \"sessionId\": \"sessionId\",\n      \"release\": \"release\",\n      \"version\": \"version\",\n      \"userId\": \"userId\",\n      \"metadata\": {\n        \"key\": \"value\"\n      },\n      \"tags\": [\n        \"tags\"\n      ],\n      \"public\": true,\n      \"environment\": \"environment\",\n      \"htmlPath\": \"htmlPath\",\n      \"latency\": 1.1,\n      \"totalCost\": 1.1,\n      \"observations\": [\n        \"observations\"\n      ],\n      \"scores\": [\n        \"scores\"\n      ]\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "2f38a669-471e-4a39-a726-27c370fbd286",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "9e5ee270-b30f-4476-ac67-a7913aaeedec",
+      "name": "deletemultiple - default",
+      "request": {
+        "urlPathTemplate": "/api/public/traces",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "9e5ee270-b30f-4476-ac67-a7913aaeedec",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "9fcf73b4-425b-4675-8b3c-f6f99812b3b1",
+      "name": "unstable_evaluationRules_list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluation-rules",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"erule_123\",\n      \"name\": \"answer-correctness-live\",\n      \"evaluator\": {\n        \"id\": \"id\",\n        \"name\": \"name\",\n        \"scope\": \"project\"\n      },\n      \"target\": \"observation\",\n      \"enabled\": true,\n      \"status\": \"active\",\n      \"pausedReason\": \"pausedReason\",\n      \"pausedMessage\": \"pausedMessage\",\n      \"sampling\": 1,\n      \"filter\": [\n        {\n          \"column\": \"column\",\n          \"operator\": \"=\",\n          \"value\": \"2024-01-15T09:30:00Z\",\n          \"type\": \"datetime\"\n        }\n      ],\n      \"mapping\": [\n        {\n          \"variable\": \"input\",\n          \"source\": \"input\"\n        }\n      ],\n      \"createdAt\": \"2026-03-30T09:20:00Z\",\n      \"updatedAt\": \"2026-03-30T09:20:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "9fcf73b4-425b-4675-8b3c-f6f99812b3b1",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "cdbecca3-78b8-4486-af29-debb5b427f16",
+      "name": "unstable_evaluationRules_create - CreateObservationEvaluationRule",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluation-rules",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"erule_123\",\n  \"name\": \"answer-correctness-live\",\n  \"evaluator\": {\n    \"id\": \"evaltmpl_123\",\n    \"name\": \"answer-correctness\",\n    \"scope\": \"project\"\n  },\n  \"target\": \"observation\",\n  \"enabled\": true,\n  \"status\": \"active\",\n  \"pausedReason\": \"pausedReason\",\n  \"pausedMessage\": \"pausedMessage\",\n  \"sampling\": 1,\n  \"filter\": [\n    {\n      \"column\": \"type\",\n      \"operator\": \"any of\",\n      \"value\": [\n        \"GENERATION\"\n      ],\n      \"type\": \"stringOptions\"\n    }\n  ],\n  \"mapping\": [\n    {\n      \"variable\": \"input\",\n      \"source\": \"input\",\n      \"jsonPath\": \"jsonPath\"\n    },\n    {\n      \"variable\": \"output\",\n      \"source\": \"output\",\n      \"jsonPath\": \"jsonPath\"\n    }\n  ],\n  \"createdAt\": \"2026-03-30T09:20:00Z\",\n  \"updatedAt\": \"2026-03-30T09:20:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "cdbecca3-78b8-4486-af29-debb5b427f16",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "132f33d7-c8ab-4539-9ca1-b4055da56d8a",
+      "name": "unstable_evaluationRules_get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluation-rules/{evaluationRuleId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "evaluationRuleId": {
+            "equalTo": "evaluationRuleId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"erule_123\",\n  \"name\": \"answer-correctness-live\",\n  \"evaluator\": {\n    \"id\": \"id\",\n    \"name\": \"name\",\n    \"scope\": \"project\"\n  },\n  \"target\": \"observation\",\n  \"enabled\": true,\n  \"status\": \"active\",\n  \"pausedReason\": \"pausedReason\",\n  \"pausedMessage\": \"pausedMessage\",\n  \"sampling\": 1,\n  \"filter\": [\n    {\n      \"column\": \"column\",\n      \"operator\": \"=\",\n      \"value\": \"2024-01-15T09:30:00Z\",\n      \"type\": \"datetime\"\n    }\n  ],\n  \"mapping\": [\n    {\n      \"variable\": \"input\",\n      \"source\": \"input\",\n      \"jsonPath\": \"jsonPath\"\n    }\n  ],\n  \"createdAt\": \"2026-03-30T09:20:00Z\",\n  \"updatedAt\": \"2026-03-30T09:20:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "132f33d7-c8ab-4539-9ca1-b4055da56d8a",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "7d2652da-f1f3-48d0-bac6-e6114352447e",
+      "name": "unstable_evaluationRules_delete - default",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluation-rules/{evaluationRuleId}",
+        "method": "DELETE",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "evaluationRuleId": {
+            "equalTo": "evaluationRuleId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"message\": \"message\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "7d2652da-f1f3-48d0-bac6-e6114352447e",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "fcea7c6a-dbab-43d1-a6ac-59eaba5b791a",
+      "name": "unstable_evaluationRules_update - default",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluation-rules/{evaluationRuleId}",
+        "method": "PATCH",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "evaluationRuleId": {
+            "equalTo": "evaluationRuleId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"erule_123\",\n  \"name\": \"answer-correctness-live\",\n  \"evaluator\": {\n    \"id\": \"id\",\n    \"name\": \"name\",\n    \"scope\": \"project\"\n  },\n  \"target\": \"observation\",\n  \"enabled\": true,\n  \"status\": \"active\",\n  \"pausedReason\": \"pausedReason\",\n  \"pausedMessage\": \"pausedMessage\",\n  \"sampling\": 1,\n  \"filter\": [\n    {\n      \"column\": \"column\",\n      \"operator\": \"=\",\n      \"value\": \"2024-01-15T09:30:00Z\",\n      \"type\": \"datetime\"\n    }\n  ],\n  \"mapping\": [\n    {\n      \"variable\": \"input\",\n      \"source\": \"input\",\n      \"jsonPath\": \"jsonPath\"\n    }\n  ],\n  \"createdAt\": \"2026-03-30T09:20:00Z\",\n  \"updatedAt\": \"2026-03-30T09:20:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "fcea7c6a-dbab-43d1-a6ac-59eaba5b791a",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "599465c9-58c3-4d87-a646-6e9629133308",
+      "name": "unstable_evaluators_list - default",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluators",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"data\": [\n    {\n      \"id\": \"evaltmpl_123\",\n      \"name\": \"answer-correctness\",\n      \"version\": 2,\n      \"scope\": \"project\",\n      \"type\": \"llm_as_judge\",\n      \"prompt\": \"You are grading an answer.\\n\\nInput:\\n{{input}}\\n\\nOutput:\\n{{output}}\\n\\nReturn a score between 0 and 1.\\n\",\n      \"variables\": [\n        \"input\",\n        \"output\"\n      ],\n      \"outputDefinition\": {\n        \"dataType\": \"NUMERIC\",\n        \"reasoning\": {\n          \"description\": \"description\"\n        },\n        \"score\": {\n          \"description\": \"description\"\n        }\n      },\n      \"modelConfig\": {\n        \"provider\": \"openai\",\n        \"model\": \"gpt-4.1-mini\"\n      },\n      \"evaluationRuleCount\": 0,\n      \"createdAt\": \"2026-03-30T09:00:00Z\",\n      \"updatedAt\": \"2026-03-30T09:00:00Z\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"limit\": 1,\n    \"totalItems\": 1,\n    \"totalPages\": 1\n  }\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "599465c9-58c3-4d87-a646-6e9629133308",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      },
+      "postServeActions": []
+    },
+    {
+      "id": "87446030-999b-416b-8b7d-867258f1406b",
+      "name": "unstable_evaluators_create - CreateEvaluatorVersion",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluators",
+        "method": "POST",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"evaltmpl_123\",\n  \"name\": \"answer-correctness\",\n  \"version\": 2,\n  \"scope\": \"project\",\n  \"type\": \"llm_as_judge\",\n  \"prompt\": \"You are grading an answer.\\n\\nInput:\\n{{input}}\\n\\nOutput:\\n{{output}}\\n\\nReturn a score between 0 and 1.\\n\",\n  \"variables\": [\n    \"input\",\n    \"output\"\n  ],\n  \"outputDefinition\": {\n    \"dataType\": \"NUMERIC\",\n    \"reasoning\": {\n      \"description\": \"Explain why the score was assigned.\"\n    },\n    \"score\": {\n      \"description\": \"Correctness score between 0 and 1.\"\n    }\n  },\n  \"modelConfig\": {\n    \"provider\": \"openai\",\n    \"model\": \"gpt-4.1-mini\"\n  },\n  \"evaluationRuleCount\": 0,\n  \"createdAt\": \"2026-03-30T09:00:00Z\",\n  \"updatedAt\": \"2026-03-30T09:00:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "87446030-999b-416b-8b7d-867258f1406b",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    },
+    {
+      "id": "4a4ce04f-d107-4912-af68-b93f000a3d0e",
+      "name": "unstable_evaluators_get - default",
+      "request": {
+        "urlPathTemplate": "/api/public/unstable/evaluators/{evaluatorId}",
+        "method": "GET",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic dGVzdC11c2VybmFtZTp0ZXN0LXBhc3N3b3Jk"
+          }
+        },
+        "pathParameters": {
+          "evaluatorId": {
+            "equalTo": "evaluatorId"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\n  \"id\": \"evaltmpl_123\",\n  \"name\": \"answer-correctness\",\n  \"version\": 2,\n  \"scope\": \"project\",\n  \"type\": \"llm_as_judge\",\n  \"prompt\": \"You are grading an answer.\\n\\nInput:\\n{{input}}\\n\\nOutput:\\n{{output}}\\n\\nReturn a score between 0 and 1.\\n\",\n  \"variables\": [\n    \"input\",\n    \"output\"\n  ],\n  \"outputDefinition\": {\n    \"dataType\": \"NUMERIC\",\n    \"reasoning\": {\n      \"description\": \"description\"\n    },\n    \"score\": {\n      \"description\": \"description\"\n    }\n  },\n  \"modelConfig\": {\n    \"provider\": \"openai\",\n    \"model\": \"gpt-4.1-mini\"\n  },\n  \"evaluationRuleCount\": 0,\n  \"createdAt\": \"2026-03-30T09:00:00Z\",\n  \"updatedAt\": \"2026-03-30T09:00:00Z\"\n}",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "4a4ce04f-d107-4912-af68-b93f000a3d0e",
+      "persistent": true,
+      "priority": 3,
+      "metadata": {
+        "mocklab": {
+          "created": {
+            "at": "2020-01-01T00:00:00.000Z",
+            "via": "SYSTEM"
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "total": 96
+  }
+}

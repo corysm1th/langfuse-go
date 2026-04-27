@@ -1,0 +1,20 @@
+api:
+  specs:
+    - openapi: ../langfuse/web/public/generated/api/openapi.yml
+      overrides: overrides.yml
+
+default-group: go
+groups:
+  go:
+    generators:
+      - name: fernapi/fern-go-sdk
+        version: 1.37.0
+        output:
+          location: local-file-system
+          path: ..
+        config:
+          module:
+            path: github.com/corysm1th/langfuse-go
+          packageName: langfuse
+          clientName: LangfuseClient
+        smart-casing: true

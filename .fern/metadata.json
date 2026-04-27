@@ -1,0 +1,17 @@
+{
+  "cliVersion": "4.96.0",
+  "generatorName": "fernapi/fern-go-sdk",
+  "generatorVersion": "1.37.0",
+  "generatorConfig": {
+    "module": {
+      "path": "github.com/corysm1th/langfuse-go"
+    },
+    "packageName": "langfuse",
+    "clientName": "LangfuseClient"
+  },
+  "originGitCommit": "157cbc8dbe5fbc8a9795bf1a73fc2c33947ba33b",
+  "originGitCommitIsDirty": false,
+  "invokedBy": "manual",
+  "requestedVersion": null,
+  "ciProvider": null
+}

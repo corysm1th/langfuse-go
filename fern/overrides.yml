@@ -1,0 +1,57 @@
+components:
+  schemas:
+    unstableEvaluationRuleStringFilterOperator:
+      x-fern-enum:
+        '=':
+          name: EQUAL
+        contains:
+          name: CONTAINS
+        does not contain:
+          name: DOES_NOT_CONTAIN
+        starts with:
+          name: STARTS_WITH
+        ends with:
+          name: ENDS_WITH
+
+    unstableEvaluationRuleNumberFilterOperator:
+      x-fern-enum:
+        '=':
+          name: EQUAL
+        '>':
+          name: GREATER_THAN
+        '<':
+          name: LESS_THAN
+        '>=':
+          name: GREATER_THAN_OR_EQUAL
+        '<=':
+          name: LESS_THAN_OR_EQUAL
+
+    unstableEvaluationRuleOptionsFilterOperator:
+      x-fern-enum:
+        any of:
+          name: ANY_OF
+        none of:
+          name: NONE_OF
+
+    unstableEvaluationRuleArrayOptionsFilterOperator:
+      x-fern-enum:
+        any of:
+          name: ANY_OF
+        none of:
+          name: NONE_OF
+        all of:
+          name: ALL_OF
+
+    unstableEvaluationRuleBooleanFilterOperator:
+      x-fern-enum:
+        '=':
+          name: EQUAL
+        '<>':
+          name: NOT_EQUAL
+
+    unstableEvaluationRuleNullFilterOperator:
+      x-fern-enum:
+        is null:
+          name: IS_NULL
+        is not null:
+          name: IS_NOT_NULL
